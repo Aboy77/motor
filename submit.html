@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/car.css">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <title>Support</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="flex">
+            <a href="index.html">
+                <h1>Motor</h1>
+            </a>
+            <nav>
+                <a href="cars.html" class="p-nav-header">Cars</a>
+                <a href="submit.html" class="p-nav-header">Support</a>
+                <a href="plans.html" class="p-nav-header">Plans</a>
+                <a href="opportunity.html" class="p-nav-header">Oportunity</a>
+                <a href="about.html" class="p-nav-header">About us</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="form">
+            <h2>Support</h2>
+            <form action="submit" id="send">
+                <div id="error"></div>
+                <div id="fill">
+                    <div class="input-r grid plan-s">
+                        <label for="name" class="t-r m-r">Name: </label>
+                        <input type="text" id="text">
+                        <label for="email" class="t-r m-r">Email: </label>
+                        <input type="email" id="email">
+                        <label for="tel" class="t-r m-r">Tel: </label>
+                        <input type="tel" id="tel">
+                        <label for="deposit" class="t-r m-r">Questions: </label>
+                        <select name="questions" id="questions">
+                        <option value="s" selected>Select</option>
+                        <option value="buyer">I'm a buyer</option>
+                        <option value="guaranty">Guaranty</option>
+                        <option value="locations">Locations</option>
+                    </select>
+
+                    </div>
+                    <div class="full-width">
+                        <input type="submit" value="Calculate" class="m-a m-t" id="calculate">
+                    </div>
+                </div>
+                <div class="lds-hourglass" id="spinn"></div>
+                <div class="send hide" id="sent">
+                    <img src="img/letter.png" alt="" width="100px">
+                    <p class="send-title">Sent!</p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/support.js"></script>
+</body>
+
+</html>

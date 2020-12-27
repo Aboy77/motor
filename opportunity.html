@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/car.css">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <title>Opportunity</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="flex">
+            <a href="index.html">
+                <h1>Motor</h1>
+            </a>
+            <nav>
+                <a href="cars.html" class="p-nav-header">Cars</a>
+                <a href="submit.html" class="p-nav-header">Support</a>
+                <a href="plans.html" class="p-nav-header">Plans</a>
+                <a href="opportunity.html" class="p-nav-header">Oportunity</a>
+                <a href="about.html" class="p-nav-header">About us</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="contenedor">
+
+
+
+        <form id="buscador">
+            <div class="row">
+                <div class="three columns">
+                    <label for="brand">Brand</label>
+                    <select class="u-full-width" id="brand">
+                        <option value="">Select</option>
+                        <option value="Audi">Audi</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Mercedes Benz">Mercedes Benz</option>
+                        <option value="Chevrolet">Chevrolet</option>
+                        <option value="Ford">Ford</option>
+                        <option value="Dodge">Dodge</option>
+                    </select>
+                </div>
+                <div class="three columns">
+                    <label for="year">Year</label>
+                    <select class="u-full-width" id="year">
+                        <option value="">Seleccione</option>
+                    </select>
+                </div>
+                <div class="three columns">
+                    <label for="minimo">Min price</label>
+                    <select class="u-full-width" id="min">
+                            <option value="">Select</option>
+                            <option value="20000">20,000</option>
+                            <option value="30000">30,000</option>
+                            <option value="40000">40,000</option>
+                            <option value="50000">50,000</option>
+                            <option value="60000">60,000</option>
+                            <option value="70000">70,000</option>
+                            <option value="80000">80,000</option>
+                            <option value="90000">90,000</option>
+                    </select>
+                </div>
+                <div class="three columns">
+                    <label for="maximo">Max price</label>
+                    <select class="u-full-width" id="max">
+                            <option value="">Select</option>
+                            <option value="20000">20,000</option>
+                            <option value="30000">30,000</option>
+                            <option value="40000">40,000</option>
+                            <option value="50000">50,000</option>
+                            <option value="60000">60,000</option>
+                            <option value="70000">70,000</option>
+                            <option value="80000">80,000</option>
+                            <option value="90000">90,000</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <div class="four columns">
+                        <label for="puertas">Doors</label>
+                        <select class="u-full-width" id="doors">
+                                <option value="">Select</option>
+                                <option value="2">2</option>
+                                <option value="4">4</option>
+                        </select>
+                    </div>
+                    <div class="four columns">
+                        <label for="transmision">Transmition</label>
+                        <select class="u-full-width" id="transmision">
+                                <option value="">Select</option>
+                                <option value="automatico">Automatic</option>
+                                <option value="manual">Manual</option>
+                        </select>
+                    </div>
+                    <div class="four columns">
+                        <label for="color">Color</label>
+                        <select class="u-full-width" id="color">
+                                <option value="">Select</option>
+                                <option value="Negro">Black</option>
+                                <option value="Azul">Blue</option>
+                                <option value="Blanco">White</option>
+                                <option value="Rojo">Red</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+
+        <h2 class="t-c">Results</h2>
+        <div class="column-cars" id="result">
+        </div>
+
+        <div class="img hide" id="no-result">
+            <img src="img/result.png" alt="" width="100px">
+            <h2>No results</h2>
+        </div>
+    </div>
+
+    <footer>
+        <p>Made by Brian Cuenca 2020 &copy;</p>
+    </footer>
+
+    <script src="js/db.js"></script>
+    <script src="js/opportunity.js"></script>
+
+</body>
+
+</html>

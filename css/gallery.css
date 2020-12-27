@@ -1,0 +1,98 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Audiowide', cursive;
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding: 3rem 3rem;
+    margin: 0;
+    text-align: left!important;
+    color: #ffffff;
+    letter-spacing: 4px;
+}
+
+h2 {
+    font-family: 'Audiowide', cursive;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 3rem 3rem;
+    margin: 0;
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: 4px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contenedor {
+    background-color: white;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 2rem;
+}
+
+h1,
+p {
+    text-align: center;
+}
+
+.gallery {
+    width: 100%;
+    height: 1000px;
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+.section {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    grid-gap: 10px;
+}
+
+.m-a {
+    display: block;
+    margin: 0 auto;
+}
+
+.m-t {
+    margin-top: 200px;
+}
+
+.gallery-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-gap: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+.images img {
+    width: 90%;
+}
+
+.images img:hover {
+    width: 100%;
+    transition: all .5s ease;
+}
+
+.img-p {
+    width: 150px;
+}

@@ -1,0 +1,1 @@
+The site is designed for a car salesman, where a form is provided, plans based on a small Javascript algorithm, and a personal database of the "object" type, the data base can be changed to json or indexedDB if is requerided
